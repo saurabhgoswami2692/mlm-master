@@ -1,0 +1,284 @@
+/* Reset & Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0077cc;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.login-btn {
+  background-color: #0077cc;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.login-btn:hover {
+  background-color: #005fa3;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  background-color: #e6f2ff;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.cta-button:hover {
+  background-color: #218838;
+}
+
+.hero-img img {
+  max-width: 400px;
+  width: 100%;
+}
+
+/* About Section */
+.about {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* How It Works Section */
+.how-it-works {
+  padding: 3rem 2rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.step {
+  max-width: 250px;
+}
+
+.step img {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.step h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Cards */
+.card {
+  border-radius: 15px;
+}
+
+/* Card Content */
+.card-body {
+  padding: 25px;
+}
+
+/* Buttons */
+.btn-danger {
+  background-color: #e74c3c;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #c0392b;
+}
+
+/* Alerts */
+.alert-success {
+  background-color: #2ecc71;
+  border-radius: 5px;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Forms */
+.form-label {
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+/* Images */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+/* Page Backgrounds */
+.bg-dark {
+  background-color: #34495e !important;
+}
+
+.bg-light {
+  background-color: #f7f8fa !important;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0077cc;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #0077cc;
+}
+
+/* User dropdown */
+.dropdown {
+  position: relative;
+}
+
+.user-name {
+  cursor: pointer;
+  font-weight: 600;
+  color: #0077cc;
+}
+
+
+.dropdown-menu li a {
+  color: #333;
+  display: block;
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 0.5rem 1rem;
+  min-width: 150px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .col-md-6 {
+    width: 100%;
+    padding: 15px;
+  }
+  .d-md-flex {
+    display: none;
+  }
+}
+
+.disable-click{
+    pointer-events:none;
+}
