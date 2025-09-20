@@ -14,7 +14,8 @@ class HomeController extends Controller
     // for admin
     public function index(){
         $total_users  = User::count();
-        $total_boards = Board::count();
+        $board_members = BoardMember::select('board_id')->groupBy('board_id')->get()->toArray();
+        $total_boards = count($board_members);
         $total_payout_requests = PaymentRequest::count();
 
         return view('viw_dashboard')->with([

@@ -24,7 +24,7 @@
                             <div class="p-3 border rounded shadow-sm bg-light">
                                 <h6 class="text-muted">Wallet Balance</h6>
                                 <h5 class="text-success">₹{{ $dashboard_data['wallet_balance'] ?? '0.00' }}</h5>
-                                <?php if(isset($dashboard_data['wallet_balance'])){ ?>
+                                <?php if(!empty($dashboard_data['wallet_balance'])){ ?>
                                     <a href="{{ route('withdraw_request') }}" class="btn btn-primary">Withdraw</a>
                                 <?php } ?>
                             </div>
@@ -65,7 +65,7 @@
                         </div>
                     </div>
                     
-                    <div class="alert alert-success mt-3" id="alert_copy_link" style="display: none;">
+                    <div class="alert text-success text-center" id="alert_copy_link" style="display: none;">
                         Link copied to clipboard!
                     </div>
 

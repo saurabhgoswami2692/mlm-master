@@ -37,6 +37,7 @@
                                 <th>Referrad by</th>
                                 <th>Referral Link</th>
                                 <th>Position</th>
+                                <th>Action</th>
                                 {{-- <th>Joined At</th> --}}
                             </tr>
                         </thead>
@@ -52,6 +53,10 @@
                                     <td>{{ $user['referred_by'] ?? '-' }}</td>
                                     <td>{{ env('APP_URL') . '/register?refer_id=' . $user['id'] }}</td>
                                     <td>{{ $user['position'] ?? '-' }}</td>
+                                    <td>
+                                        <a href="javascript:void(0);" name="edit_btn" id="edit_btn" class="btn btn-warning">Edit</a//\
+                                    </td>
+
                                     {{-- <td>-</td> --}}
                                 </tr>
                             <?php } ?>

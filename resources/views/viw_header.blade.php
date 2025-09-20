@@ -25,9 +25,13 @@
 </head>
 <body>
     <?php 
-        if(request()->segment(1) == 'admin' && session('admin_name') == 'admin') { ?>
+        // echo "<pre>";
+        //     print_r(session('admin_name'));
+        //     die;
+
+        // if(request()->segment(1) == 'admin' && session('admin_name') == 'admin') { ?>
         @include('viw_navbar')
-    <?php } else { ?>
+    <?php //} else { ?>
         {{-- @include('viw_user_navbar') --}}
-    <?php } ?>
+    <?php //} ?>
     
