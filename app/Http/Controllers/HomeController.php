@@ -13,6 +13,7 @@ class HomeController extends Controller
 {
     // for admin
     public function index(){
+        echo "hello"; die;
         $total_users  = User::count();
         $total_boards = Board::count();
         $total_payout_requests = PaymentRequest::count();
