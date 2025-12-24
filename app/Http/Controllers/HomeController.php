@@ -13,6 +13,7 @@ class HomeController extends Controller
 {
     // for admin
     public function index(){
+        echo "hello"; die;
         $total_users  = User::count();
         $board_members = BoardMember::select('board_id')->groupBy('board_id')->get()->toArray();
         $total_boards = count($board_members);
